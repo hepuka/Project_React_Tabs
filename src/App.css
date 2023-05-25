@@ -1,21 +1,45 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  background: #fff;
+.headers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 45px;
 }
 
+.headers h1,
+p {
+  color: brown;
+}
+
+.footers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.box-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .container {
   display: flex;
   flex-direction: column;
-  position: relative;
-  width: 500px;
-  height: 300px;
+  width: 95vw;
+  height: 78vh;
   background: #f1f1f1;
-  margin: 100px auto 0;
+  margin: 40px auto 0;
   word-break: break-all;
   border: 1px solid rgba(0, 0, 0, 0.274);
 }
@@ -24,22 +48,22 @@ body {
   display: flex;
 }
 .tabs {
-
   padding: 15px;
   text-align: center;
   width: 50%;
-  background: rgba(128, 128, 128, 0.075);
+  background: white;
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   box-sizing: content-box;
   position: relative;
   outline: none;
+  color: brown;
 }
-.tabs:not(:last-child){
+.tabs:not(:last-child) {
   border-right: 1px solid rgba(0, 0, 0, 0.274);
 }
 
-.active-tabs  {
+.active-tabs {
   background: white;
   border-bottom: 1px solid transparent;
 }
@@ -53,17 +77,14 @@ body {
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 5px;
-  background: rgb(88, 147, 241);
+  background: brown;
 }
-
-
 
 button {
   border: none;
-  
 }
 .content-tabs {
-  flex-grow : 1;
+  flex-grow: 1;
 }
 .content {
   background: white;
