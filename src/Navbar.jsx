@@ -20,6 +20,4 @@ const Navbar = ({ toggleTab, toggleState }) => {
 
 export default Navbar;
 
-{
-  /* gombokat lehet egyenként kellene az adminonly szelektáció miatt */
-}
+/* gombokat lehet egyenként kellene az adminonly szelektáció miatt */
